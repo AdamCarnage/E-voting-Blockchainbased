@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ResultPage</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <style>
+    #candidates-chart {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+    animation: slidein 2s;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.homepage-button {
+  background-color: rgb(155, 64, 12);
+  color: rgb(235, 211, 211);
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+  </style>
+</head>
+<man>
+  <nav style="height: 120px" >
+             <div class="nav-wrapper white accent-1">
+              <img src="img/nec-logo.png" alt="logo"  style="padding-left: 10px"; >
+             
+                <div class="brand-logo center"><h3 style="color: black">Election Result</h3></div>
+  
+             </div>
+          </nav>
+      </man>
+
+<body class="gray-bg">
+  <div class="container">
+    <div id="card-alert" class="card light-blue lighten-5">
+                       <div class="card-content light-blue-text">
+                         <p id="loc_info">President Election Result: Four Enlisted Candidate</p>
+                       </div>
+                     </div>
+
+  <canvas id="candidates-chart"></canvas>
+  </div>
+  <footer>
+    <a href="home.html" class="homepage-button">Return to Homepage</a>
+  </footer>
+
+  <div class="footer">
+    <ul class="class   copy-right">
+        <div>
+          <p align="center">Transparency and Harmony</p>
+        </div>
+        
+      
+    </ul>
+    
+</div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+      <script>
+      var ctx = document.getElementById('candidates-chart').getContext('2d');
+      var chart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['Viola Davis', 'Hillary Dickson', 'Angel patrick','Dolly Parton'],
+              datasets: [{
+                labels:'votes',
+                data: [50, 40, 45, 10],
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)'
+                  ],
+                  borderWidth: 0
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+
+    const Candidates2 = new Chart(document.getElementById('Candidates2'), {
+    type: 'bar',
+    data: {
+        labels: ['June', 'July', 'August', 'September'],
+        datasets: [{
+            label: 'Data Set 2',
+            data: [15, 25, 35, 45, 55],
+            backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)'
+                  ],
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+    </script>
+</body>
+</html>

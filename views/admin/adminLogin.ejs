@@ -1,0 +1,31 @@
+<%- include('../additionals/header'); -%>
+
+
+    <body class="gray-bg">
+        <%- include('../additionals/navBar'); -%>
+       <br><br>
+        <div class="login align-items-center justify-content-center container" style="padding-top: 300px;max-width: 400px;">
+            <form method="POST" action="admin_sign_Post">
+                <div class="form-group "  class="container" style="justify-content: center;">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="admin_Email"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="admin_Password" placeholder="enter password">
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary">Login</button>
+
+                    </div>
+            </form>
+        </div>
+        </div>
+
+
+
+
+        <%- include('../additionals/footer'); -%>

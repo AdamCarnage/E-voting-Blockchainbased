@@ -1,0 +1,43 @@
+<%- include('../additionals/header'); -%>
+
+
+    <body class="gray-bg">
+        <%- include('../additionals/adminDashNav'); -%>
+
+
+        <div class="login align-items-center justify-content-center container" style="padding-top: 260px;max-width: 400px;">
+            
+            <form method="POST" action="admin_add_voters_post">
+                <div class="form-group "  class="container" style="justify-content: center;">
+                    
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Registration_number"
+                        placeholder="Enter Registration number" required>
+                  
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="name" class="form-control" id="exampleInputPassword1" name="Department" placeholder="Enter department" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleInputPassword1">NIDA</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="voters_NIDA" placeholder="enter NIDA">
+                    </div> -->
+                    <div class="form-group">
+                       
+                        <input type="name" class="form-control" id="exampleInputPassword1" name="Phonenumber" placeholder="Enter Phonenumber" required>
+                    </div>
+                
+
+
+                   
+                    <button type="submit" class="btn btn-primary" style="margin-left:130px;">Submit</button>
+
+                    </div>
+            </form>
+        </div>
+        </div>
+
+
+
+
+        <%- include('../additionals/footer'); -%>

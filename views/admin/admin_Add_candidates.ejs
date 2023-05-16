@@ -1,0 +1,49 @@
+<%- include('../additionals/header'); -%>
+
+
+    <body class="gray-bg">
+        <%- include('../additionals/adminDashNav'); -%>
+
+
+        <div class="login align-items-center justify-content-center container" style="padding-top: 260px;max-width: 400px;">
+            <form method="POST" action="admin_add_candidates_post">
+                <div class="form-group "  class="container" style="justify-content: center;">
+                    
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="candidate_First_Name"
+                        placeholder="Enter first Name" required>
+                  
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="name" class="form-control" id="exampleInputPassword1" name="candidate_Last_Name" placeholder="Enter last name" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleInputPassword1">NIDA</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="voters_NIDA" placeholder="enter NIDA">
+                    </div> -->
+                    <div class="form-group">
+                       
+                        <input type="name" class="form-control" id="exampleInputPassword1" name="candidate_Party_Name" placeholder="enter Party" required>
+                    </div>
+
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Candidate Profile</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" name="candidate_profile">
+                              </div>
+                        </div>
+                
+
+
+                   
+                    <button type="submit" class="btn btn-primary" style="margin-left:130px;">Submit</button>
+
+                    </div>
+            </form>
+        </div>
+        </div>
+
+
+
+
+        <%- include('../additionals/footer'); -%>
