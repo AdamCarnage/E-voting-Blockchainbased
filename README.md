@@ -1,2 +1,2 @@
 # E-voting-Blockchainbased
-Final year project, voting for candidates during election periods.
+Final project, voting for candidates during election periods. can be used in education institutions and companies 
